@@ -14,9 +14,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Vukasin # the main title
+title: Vukašin Dobromirović # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: My Journey in Computer Science and Cybersecurity # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -25,8 +25,9 @@ description: >- # used by seo meta and the atom feed
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://vukasinsec.github.io"
 
+
 github:
-  username: github_username # change to your github username
+  username: vukasinsec # change to your github username
 
 twitter:
   username: twitter_username # change to your twitter username
@@ -34,15 +35,10 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Vukašin Dobromirović
   links:
-    # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://github.com/vukasinsec # change to your github homepage
+    - https://www.linkedin.com/in/vukasindobromirovic/
 
 google_site_verification: # fill in to your verification string
 
@@ -76,7 +72,7 @@ theme_mode: # [light | dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: https://media.licdn.com/dms/image/D4D03AQEXH7LkOIMQVg/profile-displayphoto-shrink_200_200/0/1701369904753?e=1716422400&v=beta&t=L8i1PJnUmNYcq7hJhA2EnNp5CX2B2bNXrpy0CUtTvE8
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

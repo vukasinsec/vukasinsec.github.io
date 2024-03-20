@@ -15,7 +15,7 @@ tags:
 title: 'Dynamic Host Configuration Protocol (DHCP): Explained'
 ---
 
-![banner-image|640](images/dhcp-explained/dhcp-banner.png)
+![image](/../assets/images/dhcp-banner.png)
 
 Banner graphic by [Freepik](https://www.freepik.com/free-vector/gradient-website-hosting-illustration_22112055.htm)
 
@@ -54,7 +54,7 @@ DHCP utilizes the client-server model. The DHCP client is pre-installed on all d
 
 DHCP server can also be set up behind a relay agent (Fig. 1 & 3). The relay agent is a device that forwards DHCP requests to the DHCP server. Some routers support being set up as DHCP relay agents as well. DHCP packets are always broadcasted over the network. Broadcast packets cannot travel from one network to another (cannot cross the router). By utilizing a relay agent we can overcome this limitation. Using the relay agent setup a single DHCP server can manage the assignment of IP addresses for hosts on multiple networks (Fig. 1).
 
-![DHCP Relay Server|620](images/dhcp-explained/dhcp-relay-server.png)
+![image-4](../assets/images/dhcp-relay-server.png)
 
 ### DHCP Scope
 
@@ -64,13 +64,13 @@ The IP addresses that are assigned to hosts are assigned from the DHCP scope. Th
 
 The IP addresses that are assigned to hosts by the DHCP server are not permanent. They are leased by the host from the DHCP server for a short duration.
 
-![DHCP Network|340](images/dhcp-explained/dhcp-network-1.png)
+![image-2](../assets/images/dhcp-network-1.png)
 
 Consider a network with a DHCP server and three hosts. The DHCP scope has been configured to contain three IP addresses (10.0.1.2, 10.0.1.3 and 10.0.1.4). Instead of leasing out IP addresses the DHCP server permanently assigns IP addresses to devices. When there are only three hosts on the network everything functions normally.
 
 Now assume one of the devices on the network had to be taken offline and in its place a new host was introduced into the network.
 
-![DNS Network|440](images/dhcp-explained/dns-network-2.png)
+![image-5](../assets/images/dns-network-2.png)
 
 The DHCP server will not be able to assign an IP address to the new device as its scope does not have any free IP Address. If the device that was taken offline had freed its IP Address the new device would have received an IP Address. Using permanent IP addresses can cause the DHCP server IP address pool to get depleted. To prevent running into this situation DHCP servers always lease IP addresses. 
 
@@ -106,7 +106,7 @@ Even though the DHCP server keeps track of all the addresses that it hands out, 
 ### Step 4: DHCP Acknowledgment
 The DHCP server then sends the IP Address to the client along with other network properties that are needed by the host to communicate on the network and access the internet.
 
-![DHCP Relay Message|520](images/dhcp-explained/dhcp-relay-message.png)
+![image-3](../assets/images/dhcp-relay-message.png)
 
 If the DHCP server is set up behind a relay agent, the request messages from the client are sent to the relay agent as a broadcast, the relay agent then forwards the message as an unicast packet to the DHCP server. Similarly, the responses from the DHCP server are sent to the relay agent as an Unicast message and the relay agent then broadcasts the message on the interface on which it received the original request.
 

@@ -126,7 +126,7 @@ Again from the apache2 logs we can see the wget command. It needs to be decoded 
 
 ![image.png](../assets/images/BTLO/Venom/image9.png)
 
-![image.png](../assets/images/BTLO/Venom/image%2010.png)
+![image.png](../assets/images/BTLO/Venom/image10.png)
 
 Answer: **http://192.168.1.29:8080/poison**
 
